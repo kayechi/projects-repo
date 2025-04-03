@@ -17,7 +17,7 @@ class _ProjectsTilesState extends State<ProjectsTiles> {
       onExit: (_) => setState(() => _isHovering = false),
       child: AnimatedContainer(
         duration: Duration(milliseconds: 100),
-        transform: Matrix4.translationValues(0, -10, 0),
+        transform: Matrix4.translationValues(0, _isHovering ? -10 : 0, 0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color:
