@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/components/projects_tiles.dart';
 
 class DummyProjectsPage extends StatelessWidget {
   const DummyProjectsPage({super.key});
@@ -36,132 +37,11 @@ class DummyProjectsPage extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.shade500,
-                      offset: Offset(0, 0),
-                      blurRadius: 10,
-                      spreadRadius: 2,
-                    ),
-                    BoxShadow(color: Colors.white, offset: Offset(0, 0)),
-                  ],
-                ),
-                padding: EdgeInsets.only(left: 40),
-                height: 100,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.numbers_rounded, size: 40),
-                    const SizedBox(width: 20),
-                    const Text(
-                      "E-Commerce App",
-                      style: TextStyle(fontSize: 25),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.shade500,
-                      offset: Offset(0, 0),
-                      blurRadius: 10,
-                      spreadRadius: 2,
-                    ),
-                    BoxShadow(color: Colors.white, offset: Offset(0, 0)),
-                  ],
-                ),
-                padding: EdgeInsets.only(left: 40),
-                height: 100,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.numbers_rounded, size: 40),
-                    const SizedBox(width: 20),
-                    const Text("Budgeting App", style: TextStyle(fontSize: 25)),
-                  ],
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.shade500,
-                      offset: Offset(0, 0),
-                      blurRadius: 10,
-                      spreadRadius: 2,
-                    ),
-                    BoxShadow(color: Colors.white, offset: Offset(0, 0)),
-                  ],
-                ),
-                padding: EdgeInsets.only(left: 40),
-                height: 100,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.numbers_rounded, size: 40),
-                    const SizedBox(width: 20),
-                    const Text("E-Wallet App", style: TextStyle(fontSize: 25)),
-                  ],
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.shade500,
-                      offset: Offset(0, 0),
-                      blurRadius: 10,
-                      spreadRadius: 2,
-                    ),
-                    BoxShadow(color: Colors.white, offset: Offset(0, 0)),
-                  ],
-                ),
-                padding: EdgeInsets.only(left: 40),
-                height: 100,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.numbers_rounded, size: 40),
-                    const SizedBox(width: 20),
-                    const Text(
-                      "Calculator App",
-                      style: TextStyle(fontSize: 25),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.shade500,
-                      offset: Offset(0, 0),
-                      blurRadius: 10,
-                      spreadRadius: 2,
-                    ),
-                    BoxShadow(color: Colors.white, offset: Offset(0, 0)),
-                  ],
-                ),
-                padding: EdgeInsets.only(left: 40),
-                height: 100,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.numbers_rounded, size: 40),
-                    const SizedBox(width: 20),
-                    const Text("Todo App", style: TextStyle(fontSize: 25)),
-                  ],
-                ),
-              ),
+              ProjectsTiles(projectTitle: "E-Commerce App"),
+              ProjectsTiles(projectTitle: "Budgeting App"),
+              ProjectsTiles(projectTitle: "E-Wallet App"),
+              ProjectsTiles(projectTitle: "Calculator App"),
+              ProjectsTiles(projectTitle: "Todo App"),
             ],
           ),
         ),
